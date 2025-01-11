@@ -1,0 +1,22 @@
+/* bugSolution.css */
+/* Instead of relying on nested percentage calculations with calc(), use absolute units or a more straightforward approach. */
+.parent {
+  width: 50%; /* Parent width */
+}
+
+.child {
+  width: 50%; /* Child width - this will now be 50% of the parent's width (25% of the viewport) */
+  background-color: lightblue;
+}
+
+/*  If absolute values are preferred: */
+.parent2 {
+  width: 600px;
+}
+
+.child2 {
+  width: 300px; /* Absolute width */
+  background-color: lightcoral;
+}
+
+/* Avoid complex calc() expressions within percentage calculations  */
